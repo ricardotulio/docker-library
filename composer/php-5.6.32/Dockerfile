@@ -13,3 +13,5 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 
 RUN mv composer.phar /bin/composer
 RUN chmod +x /bin/composer
+
+ENTRYPOINT ["composer"]
